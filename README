@@ -1,0 +1,19 @@
+1. cek Version and Node k8s 
+
+    kubectl Version
+    kubectl get node -o wide
+
+2. create file yml for deploy k8s
+
+    vi <nama_file>.yml
+
+
+3. run file yml 
+
+    kubectl apply -f <name_file>.yml
+
+4. verify the deployment
+
+    kubectl get pods 
+    or
+    kubectl get all 
