@@ -1,19 +1,19 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: nginx-adinusa
+  name: nginx
 spec:
   replicas: 3
   selector: 
     matchLabels:
-      app: nginx-adinusa
+      app: nginx
   template: 
     metadata:
       labels: 
-        app: nginx-adinusa
+        app: nginx
     spec: 
       containers:
-      - name: nginx-adinusa
+      - name: nginx
         image: nginx:latest
         ports:
         - containerPort: 80
